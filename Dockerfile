@@ -13,6 +13,7 @@ RUN apt-get update \
 		libyaml-dev \
 		procps \
 		zlib1g-dev \
+		build-essential \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV RUBY_MAJOR 2.2
@@ -34,6 +35,7 @@ RUN buildDeps=' \
 		libxslt-dev \
 		make \
 		ruby \
+		build-essential \
 	' \
 	&& set -x \
 	&& apt-get update \
